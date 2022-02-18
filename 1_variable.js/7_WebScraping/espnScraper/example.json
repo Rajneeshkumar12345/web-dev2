@@ -1,0 +1,103 @@
+[
+    {
+        "name": "steve",
+        "last Name": "rogers",
+        "isAvenger": true,
+        "friends": [
+            "TOny",
+            "Peter",
+            "Bruce"
+        ],
+        "age": 102,
+        "address": {
+            "city": "Brookyln",
+            "state": "New  York"
+        }
+    },
+    {
+        "name": "Tony",
+        "last Name": "Stark",
+        "isAvenger": true,
+        "friends": [
+            "TOny",
+            "Peter",
+            "Bruce"
+        ],
+        "age": 102,
+        "address": {
+            "city": "Brookyln",
+            "state": "New  York"
+        }
+    },
+    {
+        "name": "Peter",
+        "last Name": "Parker",
+        "isAvenger": true,
+        "friends": [
+            "TOny",
+            "Peter",
+            "Bruce"
+        ],
+        "age": 102,
+        "address": {
+            "city": "Brookyln",
+            "state": "New  York"
+        }
+    },
+    {
+        "name": "Thor",
+        "last Name": "Odinson",
+        "isAvenger": true,
+        "friends": [
+            "Tony",
+            "Peter",
+            "Bruce"
+        ],
+        "age": 102,
+        "address": {
+            "planet": "Asgard"
+        }
+    },
+    {
+        "name": "Thor",
+        "last Name": "Odinson",
+        "isAvenger": true,
+        "friends": [
+            "Tony",
+            "Peter",
+            "Bruce"
+        ],
+        "age": 102,
+        "address": {
+            "planet": "Asgard"
+        }
+    },
+    {
+        "name": "Thor",
+        "last Name": "Odinson",
+        "isAvenger": true,
+        "friends": [
+            "Tony",
+            "Peter",
+            "Bruce"
+        ],
+        "age": 102,
+        "address": {
+            "planet": "Asgard"
+        }
+    },
+    {
+        "name": "Thor",
+        "last Name": "Odinson",
+        "isAvenger": true,
+        "friends": [
+            "Tony",
+            "Peter",
+            "Bruce"
+        ],
+        "age": 102,
+        "address": {
+            "planet": "Asgard"
+        }
+    }
+]
