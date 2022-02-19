@@ -21,7 +21,7 @@ let promise = fs.promises.readFile("f1.txt");
 // Fullfiled 
 
 promise.then(function (data) {
-  console.log("File Data -> "+ data);
+  console.log("File Data -> " + data);
 });
 
 
