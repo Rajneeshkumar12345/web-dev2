@@ -36,7 +36,7 @@ function extractLink(html) {
     //console.log(link)  
   
     let fullLink = "https://www.espncricinfo.com" + link; // Go to view full result webPage
-      //  console.log(fullLink)
+       //console.log(fullLink)
 
 
     
