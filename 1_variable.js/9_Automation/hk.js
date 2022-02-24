@@ -8,6 +8,7 @@ let email = "wahano6617@balaket.com";
 let password = "wahan@12345";
 
 let puppeteer = require("puppeteer");
+const codeFile = require('./code')
 
 console.log("Before");
 
@@ -51,6 +52,43 @@ browserWillbeLauncedPromise
       delay: 100,
     });
     return loginPromise;
+  }).then(function(){
+    let algoWillBeclickPromise = waitAndClick('.topic-card a[data-attr1="algorithms"]' , page)
+    return algoWillBeclickPromise;
+  // }).then(function(){
+  //   console.log('Algo Scetion Click')
+  }).then(function(){
+    let getTowarmUpPromise = waitAndClick('input[value="warmup"]', page)
+    return getTowarmUpPromise;
+  }).then(function(){
+    let challengeArrPromise = page.$$('.ui-btn.ui-btn-normal.primary-cta.ui-btn-line-primary.ui-btn-styled', {delay : 100})
+    return challengeArrPromise
+  }).then(function(questionsArr){
+    console.log(" No of Questions" + questionsArr.length)
+
+    let questionWillBeSolvedPromise = questionSolver(page, questionsArr[0], codeFile.answers[0])
   });
 
+  function waitAndClick(selector, cPage){
+    return new Promise(function(resolve, reject){
+      let waitForModalPromise = cPage.waitForSelector(selector); // wait for selector by default selector
+      waitForModalPromise.then(function(){
+        let clickModalPromise = cPage.click(selector, {delay : 100})
+        return clickModalPromise
+      }).then(function(){
+        resolve()
+      }).catch(function(){
+        reject()
+      })
+    })
+  }
+
+  function questionSolver(page, question, answer){
+    return new Promise(function(resolve, reject){
+      let questionWillBeClickedPromise = question.click()
+      questionWillBeClickedPromise.then(function(){
+        console.log('question Clicked')
+      })
+    })
+  }
 console.log("After"); ///
