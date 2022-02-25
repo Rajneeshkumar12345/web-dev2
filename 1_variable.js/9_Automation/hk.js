@@ -1,5 +1,10 @@
 
-
+ // Key Tool  used:-
+//  1. puppeteer
+//  2. Promise
+//  3. $$ - jquery
+//  4. waitForSelector
+//  5. waitAndClick
 
 // wahano6617@balaket.com  -> pass - wahan@12345  -> Name - dalton kumar
 const loginLink = "https://www.hackerrank.com/auth/login";
@@ -8,6 +13,8 @@ let email = "wahano6617@balaket.com";
 let password = "wahan@12345";
 
 let puppeteer = require("puppeteer");
+// Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol . 
+//Puppeteer runs headless by default, but can be configured to run full (non-headless) Chrome or Chromium.
 const codeFile = require('./code')
 
 console.log("Before");
@@ -53,7 +60,7 @@ browserWillbeLauncedPromise
     });
     return loginPromise;
   }).then(function(){
-    let algoWillBeclickPromise = waitAndClick('.topic-card a[data-attr1="algorithms"]' , page)
+    let algoWillBeclickPromise = waitAndClick('.topic-card a[data-attr1="algorithms"]' ,page)
     return algoWillBeclickPromise;
   // }).then(function(){
   //   console.log('Algo Scetion Click')
@@ -92,3 +99,5 @@ browserWillbeLauncedPromise
     })
   }
 console.log("After"); /////
+
+
