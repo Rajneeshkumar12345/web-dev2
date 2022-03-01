@@ -7,6 +7,13 @@
 
 //js mein input Array ke from mein jaata hai and that is array is process.argv Array
 
+
+// *******************Tools Used***********************************//
+// 1. Fs Module
+// 2. Path Module
+// 3. MOdule Exports
+// 4. Tree , Organize and Help command used
+
 const helpModule = require('./commands/help')
 const organizeModule = require('./commands/organize')
 const treeModule = require('./commands/tree')
