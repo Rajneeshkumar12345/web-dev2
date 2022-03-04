@@ -42,6 +42,13 @@ switch ( command ){
   organizeFn( inputArr[1]);
   break;
 
+  // Organize function 
+  // console.log("organize commmand implemented for", dirPath)
+  // 1. input -> directory path given 
+  // 2. create -> organize files -> directory 
+  // 3. identify catgories of all the files present in that input directory 
+  // 4. copy / cut files to that organize directory inside of any of category folder
+
   case "help":
   helpfn();
   break;
