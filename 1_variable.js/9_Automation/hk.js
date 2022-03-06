@@ -4,7 +4,7 @@
 //  2. Promise
 //  3. $$ - jquery
 //  4. waitForSelector
-//  5. waitAndClick
+// 
 
 // wahano6617@balaket.com  -> pass - wahan@12345  -> Name - dalton kumar
 const loginLink = "https://www.hackerrank.com/auth/login";
