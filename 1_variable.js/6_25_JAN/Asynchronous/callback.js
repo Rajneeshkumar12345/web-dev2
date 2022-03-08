@@ -4,8 +4,8 @@ const fs = require('fs')
 
 
 
-// Callback function - any function that is passed as an
-//argument to another function is known
+//*************************** Callback function ******************************* 
+//any function that is passed as an argument to another function is known
 //as a callback function
 
 
