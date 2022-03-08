@@ -185,7 +185,7 @@ function organizeFn(dirpath) {
             } else {
               let doesExist = fs.existsSync(dirpath);
               if (doesExist == true) {
-                treeHelper(dirpath, " ");  // Call of function
+                treeHelper(dirpath, " ");  // Call of function//
               }
             }
           }  
