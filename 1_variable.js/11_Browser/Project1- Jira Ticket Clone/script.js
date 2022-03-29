@@ -19,10 +19,10 @@ let addFlag = false;
 addBtn.addEventListener("click", function (e) {
     // Display the modal
 
-    // addFlag -  true-display modal
+    // addFlag -  true - display modal
     //addFlag - false - hide modal
 
-    addFlag = !addFlag;
+    addFlag = !addFlag;  // takes truth to falsity and vice versa.
 
     if (addFlag == true) {
         modalCont.style.display = "flex"
@@ -33,9 +33,9 @@ addBtn.addEventListener("click", function (e) {
 
 //  Changing Priority Colors
 
-allPriorityColors.forEach(function (colorElem) {
-    colorElem.addEventListener('click', function (e) {
-        allPriorityColors.forEach(function (priorityColorElem) {
+allPriorityColors.forEach(function (colorElem) {   // All colors will be come
+    colorElem.addEventListener('click', function (e) {    // Click the color
+        allPriorityColors.forEach(function (priorityColorElem) {  // here wait a perticular color
             priorityColorElem.classList.remove('active');
         })
         colorElem.classList.add('active');

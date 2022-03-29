@@ -119,27 +119,27 @@
 
 
 
-    //   let select = document.querySelector("select");
+      let select = document.querySelector("select");
 
-    //   select.addEventListener("change", function () {
-    //     let filterVal = select.value;
+      select.addEventListener("change", function () {
+        let filterVal = select.value;
 
-    //     let allTickets = document.querySelectorAll("p");
+        let allTickets = document.querySelectorAll("p");
 
-    //     if (filterVal === "none") {
-    //       for (let i = 0; i < allTickets.length; i++) {
-    //         allTickets[i].parentElement.style.display = "block";
-    //       }
-    //     } else {
-    //       for (let i = 0; i < allTickets.length; i++) {
-    //         if (allTickets[i].getAttribute("data-category") != filterVal) {
-    //           allTickets[i].parentElement.style.display = "none";
-    //         } else {
-    //           allTickets[i].parentElement.style.display = "block";
-    //         }
-    //       }
-    //     }
-    //   });
+        if (filterVal === "none") {
+          for (let i = 0; i < allTickets.length; i++) {
+            allTickets[i].parentElement.style.display = "block";
+          }
+        } else {
+          for (let i = 0; i < allTickets.length; i++) {
+            if (allTickets[i].getAttribute("data-category") != filterVal) {
+              allTickets[i].parentElement.style.display = "none";
+            } else {
+              allTickets[i].parentElement.style.display = "block";
+            }
+          }
+        }
+      });
     </script>
   </body>
 </html>
