@@ -17,7 +17,7 @@ let removeFlag = false
 
 let addFlag = false;
 
-let lockClass = "fa-lock"
+let lockClass = "fa-lock"   // Through font awesome website find code
 let unlockClass = "fa-lock-open"
 
 addBtn.addEventListener("click", function (e) {
@@ -140,7 +140,7 @@ function handleColor(ticket) {
 
         currentTicketColoridx++
 
-        let newTicketColorIdx = currentTicketColoridx % colors.length
+        let newTicketColorIdx = currentTicketColoridx%colors.length
         let newTicketColor = colors[newTicketColorIdx]
 
         ticketColorBand.classList.remove(currentTicketColor)
