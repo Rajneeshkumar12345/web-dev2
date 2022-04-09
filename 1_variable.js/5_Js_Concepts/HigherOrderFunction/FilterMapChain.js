@@ -22,9 +22,9 @@ let lages = arr.filter(function(v){
     else{
            return false
     }
- }).map(function(n){                    // **********//
-     return n.age
-})
+  }).map(function(n){                    // **********//
+      return n.age
+ })
 
 
 console.log(lages)

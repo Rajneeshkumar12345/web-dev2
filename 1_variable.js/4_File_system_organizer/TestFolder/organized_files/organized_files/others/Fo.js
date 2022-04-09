@@ -119,7 +119,7 @@ function organizeFn(dirpath) {
        for (let i = 0; i < childNames.length; i++) {
          let childAddress = path.join(src, childNames[i]); // path is identified for the files
          let isFile = fs.lstatSync(childAddress).isFile(); // we check here to identify only the files
-         //console.log(childAddress + "  " + isFile)
+         //console.log(childAddress + "  " + isFile);
      
          if (isFile == true) {
            let fileCategory = getCategory(childNames[i]); //.txt

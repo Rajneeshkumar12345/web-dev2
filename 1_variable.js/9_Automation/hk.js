@@ -31,7 +31,7 @@ let browserWillbeLauncedPromise = puppeteer.launch({
 // we used puppeteer launch method to return an instance of broswer  
 
 browserWillbeLauncedPromise
-  .then(function (browserInstance) {
+  .then(function (browserInstance) { `   `
     let newTabPromise = browserInstance.newPage();
     return newTabPromise;
   })

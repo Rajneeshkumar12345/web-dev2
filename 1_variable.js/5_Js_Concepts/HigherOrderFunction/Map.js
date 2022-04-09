@@ -20,10 +20,11 @@ let arr = [2, 5, 9, 8, 15, 11, 6];
 // ********//
 //map returns a new array
 
+// *********** Question 1************
 
- let sqarr = arr.map(function squarer(v) {
-   return v * v;
- });
+//  let sqarr = arr.map(function squrer(v) {
+//    return v * v;
+//  });
 
  //console.log(sqarr);
 
@@ -33,6 +34,7 @@ let arr = [2, 5, 9, 8, 15, 11, 6];
 
 
 
+// ************Question 2 ****************
 
 //  let nameArr = ['raneesh', 'prabhu', 'ram']
 
@@ -49,33 +51,34 @@ let arr = [2, 5, 9, 8, 15, 11, 6];
 
 
 
-// Questions
+//********* */ Questions 3 *************
 
 
-let nameArr = ['Vishal Kumar', 'Vaibhav Rawal', 'Anmol Taneja']
-//Task - first and last name split
+// let nameArr = ['Vishal Kumar', 'Vaibhav Rawal', 'Anmol Taneja']
+// //Task - first and last name split
 
-let modifiedArr = nameArr.map(function(n){
-    let partsOfname = n.split(' ');
-    return partsOfname
-})
+// let modifiedArr = nameArr.map(function(n){
+//     let partsOfname = n.split(" ");
+//     return partsOfname
+// })
 
-console.log(modifiedArr)
-
-
-
+// console.log(modifiedArr)
 
 
 
 
-// Question
+
+
+
+// ************* Question 4 ********************
+
 
 const transactions = [1000, 3000, 4000, 2000, -898, 3800, -4500];
 const inrtToUsd = 74;
 // Change into rupaye using map function
 
 let transactionsinRs = transactions.map(function(n){
-        return (n/inrtToUsd).toFixed(2); // 2 point tak ans dega toFixed ki help se
+        return (n/inrtToUsd).toFixed(); // 2 point tak ans dega toFixed ki help se
 })
 
 console.log(transactionsinRs)
