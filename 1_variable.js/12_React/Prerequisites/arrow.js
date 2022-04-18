@@ -1,7 +1,7 @@
 // write a function to add two numbers and print their sum (function Expression)
 
 
-// let add =(a , b)=>{ // It is called also Fat Arrow So no need to function
+// let add =(a , b)=>{ // It is called also Fat Arrow So no need to function Keyword
 //     console.log(a+b)
 // }
 
@@ -18,9 +18,9 @@
 // }
 
 
-// regularFunction('Adam')
+//  regularFunction('Adam')
 
-// arrowFunction('Steve')
+//  arrowFunction('Steve')
 
 
 // ******** Case -- 1*******//
@@ -36,20 +36,20 @@
 // ******** Case -- 2  *******//
 
 
-let person = {
-       name : 'Adam',
-       age : 27 ,
+// let person = {
+//        name : 'Adam',
+//        age : 27 ,
 
-       showDetails : function(){
-              console.log(this.name + ' ' + this.age)
+//        showDetails : function(){
+//               console.log(this.name + ' ' + this.age)
       
-       },
+//        },
 
-       showDetailsArrow : ()=>{
-              console.log(this.name + ' ' + this.age)
-       }
-}
+//        showDetailsArrow : ()=>{
+//               console.log(this.name + ' ' + this.age)
+//        }
+// }
 
 
- person.showDetails()
- person.showDetailsArrow() // Undefined - Becuase of emmpty(This) objects 
+//  person.showDetails()
+//  person.showDetailsArrow() // Undefined - Becuase of emmpty(This) objects 

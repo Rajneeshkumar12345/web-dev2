@@ -10,7 +10,7 @@ class Person {
   // Inheritance me property catch kr sakte h na ki value ko
   class Teacher extends Person {
     constructor(name , age ,classStrength) {
-       super(name , age)                 // Super Keyword use 
+       super(name, age)               // Super Keyword use 
       this.classStrength = classStrength;
     }
   }
@@ -31,9 +31,9 @@ class Person {
   let student1 = new Student("Mark", 21, 8.0);
   
   // console.log(person1);
-  // console.log(teacher1);
+ //console.log(teacher1);
   // console.log(student1);
   
   
-  person1.welcome()
-  student1.hello()
+//   person1.welcome()
+//   student1.hello()

@@ -1,11 +1,5 @@
 let str = 'pepcoder'
-console.log(str)
-
-
-
-
-
-
+//console.log(str)
 
 //String is a sequence of characters
 
@@ -27,7 +21,7 @@ console.log(str)
 // console.log(slicedStr)
 
 // //2. substr
-// // substr(start , length)
+// substr(start , length)
 // let subString = str.substr(3)
 // console.log(subString)
 
@@ -72,8 +66,9 @@ console.log(str)
 
 //Trim method is used to remove all the whiteSpaces
 
-let text = '            Hello World          '
-console.log(text)
 
-let trimmedtext = text.trim()
-console.log(trimmedtext)
+// let text = '            Hello World          '
+// console.log(text)
+
+// let trimmedtext = text.trim()
+// console.log(trimmedtext)
