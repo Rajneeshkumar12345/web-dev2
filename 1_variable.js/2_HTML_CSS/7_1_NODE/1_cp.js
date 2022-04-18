@@ -7,10 +7,10 @@
 
 //  cp.execSync("calc");
 
- console.log("Trying to open Vs code");
+//  console.log("Trying to open Vs code");
 
- cp.execSync("code");
+//  cp.execSync("code");
 
-cp.execSync('start chrome https://rajneeshkumar12345.github.io/My-website/')
+// cp.execSync('start chrome https://rajneeshkumar12345.github.io/My-website/')
 
-console.log("output"+ cp.execSync('node test.js'));
+// console.log("output"+ cp.execSync('node test.js'));
