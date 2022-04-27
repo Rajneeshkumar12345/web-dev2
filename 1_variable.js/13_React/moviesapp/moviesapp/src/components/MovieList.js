@@ -47,7 +47,7 @@ export class MovieList extends Component {
                     href="#"
                     className="btn btn-primary movies-button text-center"
                   >
-                    Add to Favourites
+                    Add to Favourites 
                   </a>
                 )}
               </div>
