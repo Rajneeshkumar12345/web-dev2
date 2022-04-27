@@ -55,9 +55,10 @@
 
 .banner-title{
   position: absolute;
-  font-size: 45px;
+
   top : 45vh;
   left : 5vw;
+  font-size: 45px;
   
   color:white;
 }
@@ -65,10 +66,18 @@
 
 .banner-text{
   position:absolute;
-  color:white;
+  color: white;
   top:55vh;
   height: 4.5rem;
   margin-left: 5vw;
 
 
+}
+
+
+.movies-list{
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
