@@ -104,3 +104,15 @@
  
 
 }
+
+/* genre -Styling basically col-3 */
+
+.genre-selecter{
+  padding: 3rem;
+}
+
+/* col-9 styling */
+
+.favourites-table{
+  padding: 3rem;
+}

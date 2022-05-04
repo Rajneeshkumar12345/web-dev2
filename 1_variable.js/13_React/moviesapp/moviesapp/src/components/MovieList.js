@@ -11,15 +11,15 @@ export class MovieList extends Component {
 
     this.state = {
       hover: "",
-      parr: [1],
+      parr: [0],
       movies: [],
       currPage: 1,
     };
   }
-
+  // Call API  data from TMDB
   async componentDidMount() {
     const res = await axios.get(
-      `https://api.themoviedb.org/3/movie/popular?api_key=0b5415eb9bf023d556ef265b425e0e4a&language=en-US&page=${this.state.currPage}`
+      `https://api.themoviedb.org/3/movie/popular?api_key=96c56e0a834e2aac4c030353cdaa6412&language=en-US&page=${this.state.currPage}`
     );
     let movieData = res.data;
     console.log(movieData);
@@ -30,10 +30,10 @@ export class MovieList extends Component {
 
     console.log("mounting done with CDM third");
   }
-
+    // Change movieData page through API
   changeMovies = async () => {
     const res = await axios.get(
-      `https://api.themoviedb.org/3/movie/popular?api_key=0b5415eb9bf023d556ef265b425e0e4a&language=en-US&page=${this.state.currPage}`
+      `https://api.themoviedb.org/3/movie/popular?api_key=96c56e0a834e2aac4c030353cdaa6412&language=en-US&page=${this.state.currPage}`
     );
     let movieData = res.data;
     console.log(movieData);
@@ -153,3 +153,15 @@ export class MovieList extends Component {
 }
 
 export default MovieList;
+
+
+
+// Features of Axios Library -> 
+
+// JSON data is transformed automatically.
+// It transforms the request and response data.
+// Useful in making HTTP requests from Node.js
+// It makes XMLHttpRequests from the browser.
+// Provide client-side support for protecting against XSRF.
+// Supports promise API.
+// Ability to cancel the request.
