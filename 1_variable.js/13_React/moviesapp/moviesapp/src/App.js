@@ -1,20 +1,24 @@
 
-import './App.css';
+import "./App.css";
 
-import NavBar from './components/NavBar';
+import NavBar from "./components/NavBar";
+import Banner from "./components/Banner";
+import MovieList from "./components/MovieList";
+import Favourites from "./components/Favourites";
 
-import Banner from './components/Banner';
-import MovieList from './components/MovieList';
-import Favourites from './components/Favourites';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-     <NavBar/>
-     {/* <Banner />
-     <MovieList /> */}
-     <Favourites/>
-    </>
+   <BrowserRouter>
+    <NavBar/>
+   <Routes>
+    <Route path='/' element={<> <Banner/> <MovieList/> </>}/>
+    <Route path='/favourites' element={<Favourites/>} />
+
+   </Routes>
+   
+   </BrowserRouter>
      
 
   );

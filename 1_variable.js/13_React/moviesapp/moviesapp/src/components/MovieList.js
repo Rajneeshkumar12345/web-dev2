@@ -11,15 +11,16 @@ export class MovieList extends Component {
 
     this.state = {
       hover: "",
-      parr: [0],
+      parr: [1],
       movies: [],
       currPage: 1,
+      favourites : []
     };
   }
-  // Call API  data from TMDB
+
   async componentDidMount() {
     const res = await axios.get(
-      `https://api.themoviedb.org/3/movie/popular?api_key=96c56e0a834e2aac4c030353cdaa6412&language=en-US&page=${this.state.currPage}`
+      `https://api.themoviedb.org/3/movie/popular?api_key=0b5415eb9bf023d556ef265b425e0e4a&language=en-US&page=${this.state.currPage}`
     );
     let movieData = res.data;
     console.log(movieData);
@@ -30,10 +31,10 @@ export class MovieList extends Component {
 
     console.log("mounting done with CDM third");
   }
-    // Change movieData page through API
+
   changeMovies = async () => {
     const res = await axios.get(
-      `https://api.themoviedb.org/3/movie/popular?api_key=96c56e0a834e2aac4c030353cdaa6412&language=en-US&page=${this.state.currPage}`
+      `https://api.themoviedb.org/3/movie/popular?api_key=0b5415eb9bf023d556ef265b425e0e4a&language=en-US&page=${this.state.currPage}`
     );
     let movieData = res.data;
     console.log(movieData);
@@ -79,6 +80,34 @@ export class MovieList extends Component {
        }
   }
 
+  handleFavourites=(movieObj)=>{
+      let oldData = JSON.parse(localStorage.getItem('movies-app') || '[]')
+
+      if(this.state.favourites.includes(movieObj.id)){
+                oldData = oldData.filter((movie)=> movie.id != movieObj.id)
+      }
+
+      else{
+        oldData.push(movieObj)
+      }
+
+      localStorage.setItem("movies-app" , JSON.stringify(oldData))
+      console.log(oldData)
+
+      this.handleFavouritesState()
+  }
+
+  handleFavouritesState =()=>{
+    let oldData = JSON.parse(localStorage.getItem('movies-app') || '[]')
+    let temp = oldData.map((movie)=>movie.id)
+
+    this.setState({
+      favourites : [...temp]
+    })
+
+
+  }
+
   render() {
     console.log("render second");
 
@@ -110,14 +139,17 @@ export class MovieList extends Component {
                 className="button-wrapper"
                 style={{ display: "flex", justifyContent: "center" }}
               >
-                {this.state.hover == movieElem.id && (
+                {this.state.hover == movieElem.id && 
                   <a
-                    href="#"
                     className="btn btn-primary movies-button text-center"
+                    onClick={()=> this.handleFavourites(movieElem)}
+
+                  
                   >
-                    Add to Favourites
+                    {this.state.favourites.includes(movieElem.id)? "Remove from Favorites" : 'Add to Favourites'} 
+                  
                   </a>
-                )}
+                }
               </div>
             </div>
           ))}
@@ -153,15 +185,3 @@ export class MovieList extends Component {
 }
 
 export default MovieList;
-
-
-
-// Features of Axios Library -> 
-
-// JSON data is transformed automatically.
-// It transforms the request and response data.
-// Useful in making HTTP requests from Node.js
-// It makes XMLHttpRequests from the browser.
-// Provide client-side support for protecting against XSRF.
-// Supports promise API.
-// Ability to cancel the request.
