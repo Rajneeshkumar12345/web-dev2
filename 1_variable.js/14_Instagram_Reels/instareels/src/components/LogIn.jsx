@@ -1,4 +1,6 @@
 import React,{useState} from 'react'
+
+// rkv@gmail.com and pass - 1234567890 of firebase
 import {auth,} from "../firebase"
 import {signInWithEmailAndPassword, signOut} from "firebase/auth"
 
@@ -43,9 +45,9 @@ export default function LogIn() {
   return (
     <>
     {
-      error != "" ? <h1>Error is{error}</h1> :
-        loader == true ? <h1>...Loading</h1> :
-          user != null ? 
+      error !== "" ? <h1>Error is{error}</h1> :
+        loader === true ? <h1>...Loading</h1> :
+          user !== null ? 
           <>
           <button
             onClick={signout}
