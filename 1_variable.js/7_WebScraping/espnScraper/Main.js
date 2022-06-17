@@ -17,11 +17,11 @@ dirCreator(iplPath);
 // What is request npm?
 //  The request module is used to make HTTP calls. 
 //  It is the simplest way of making HTTP calls in node. 
-//  js using this request module. It follows redirects by defaul
+//  js using this request module. It follows redirects by default
 
 
 // What is NPM Cheerio?
-// bCheerio parses markup and provides an API for traversing/manipulating the resulting data structure. 
+// Cheerio parses markup and provides an API for traversing/manipulating the resulting data structure. 
 // It does not interpret the result as a web browser does. 
 // Specifically, it does not produce a visual rendering, apply CSS, load external resources, 
 // or execute JavaScript which is common for a SPA (single page application).

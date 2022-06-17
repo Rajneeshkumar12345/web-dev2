@@ -4,12 +4,14 @@ import Feed from "./components/Feed";
 import LogIn from "./components/LogIn";
 import PageNotFound from "./components/PageNotFound";
 import Profile from "./components/Profile";
-import SignUP from "./components/SignUP";
+import SignUP from "./components/Signup";
+import {AuthContextProvider} from "./context/AuthContext";
 
 
 function App() {
   return (
    <>
+   <AuthContextProvider>
    <Switch>
    <Route path="/feed">
    <Feed/>
@@ -34,8 +36,7 @@ function App() {
  
   
   <LogIn/>
-  
-  
+   </AuthContextProvider>
   
    </>
    

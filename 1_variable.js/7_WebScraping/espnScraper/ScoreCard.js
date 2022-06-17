@@ -1,5 +1,5 @@
 
-//const url = 'https://www.espncricinfo.com//series/ipl-2020-21-1210595/mumbai-indians-vs-chennai-super-kings-1st-match-1216492/full-scorecard'
+const url = 'https://www.espncricinfo.com//series/ipl-2020-21-1210595/mumbai-indians-vs-chennai-super-kings-1st-match-1216492/full-scorecard'
 
 const request = require("request");
 const cheerio = require("cheerio");
@@ -17,7 +17,7 @@ function processScorecard(url){
 
 
 
-// request(url, cb);
+request(url, cb);
 
 function cb(err, response, html) {
   if (err) {
@@ -48,6 +48,7 @@ function extractMatchDetails(html){
 
 
     console.log("...................................................................")
+
 
     let innings = $('.card.content-block.match-scorecard-table>.Collapsible') // collabsible in child selectors that is made diffrent from other table 
 
