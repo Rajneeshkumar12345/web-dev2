@@ -1,8 +1,8 @@
 
 import './App.css';
-import Ball from './components/simpleReact/Ball';
-import Bat from './components/Bat';
-import BatuseReducer from './components/BatuseReducer';
+import Ball from './components/Ball';
+//import Bat from './components/Bat';
+//import BatuseReducer from './components/BatuseReducer';
 
 import store from "./store"
 import {Provider} from "react-redux"

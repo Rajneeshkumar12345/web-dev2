@@ -1,4 +1,6 @@
-let initialState = 10;
+let initialState = {
+    balls:10
+};
 function ballReducer(state = initialState, action) {
     switch (action.type) {
         case "increament":
@@ -10,7 +12,8 @@ function ballReducer(state = initialState, action) {
                 balls: state.balls - 1
             }
         default:
-            console.log("Wrong type")        
+            console.log("Wrong type")    
+            return state    
     }
 }
 export default ballReducer

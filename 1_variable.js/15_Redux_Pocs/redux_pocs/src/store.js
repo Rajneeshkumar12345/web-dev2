@@ -1,6 +1,6 @@
 // npm i redux react-redux
 import {createStore} from "redux";
-import ballReducer from "./redux/ballReducer";
-const store = createStore(ballReducer);
-
+import rootReducer from "./redux/rootReducer";
+const store = createStore(rootReducer);
+console.log(store.getState())
 export default store;
