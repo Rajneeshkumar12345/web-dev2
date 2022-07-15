@@ -18,9 +18,9 @@
 // }
 
 
-//  regularFunction('Adam')
+//   regularFunction('Adam')
 
-//  arrowFunction('Steve')
+//   arrowFunction('Steve')
 
 
 // ******** Case -- 1*******//

@@ -38,7 +38,7 @@ function Login() {
     await signOut(auth);
     setUser(null);
   }
-  useEffect(() => {
+  useEffect(() => {  // This is check that the user login toh nhi ha pahle se
     onAuthStateChanged(auth, (user) => {
       if (user) {
         // User is signed in, see docs for a list of available properties

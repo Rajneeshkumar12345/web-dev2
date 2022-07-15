@@ -35,7 +35,7 @@ function App() {
    </Switch>
  
   
-  <LogIn/>
+  {/* <LogIn/> */}
    </AuthContextProvider>
   
    </>

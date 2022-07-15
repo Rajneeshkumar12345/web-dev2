@@ -1,0 +1,16 @@
+check vs code version react app command => npm list--depth=0
+
+# npx i create-react-app .
+# make components with 5 files
+# npm i react-router-dom@5.3.1
+# making routing that means goes to differen-2 pages
+# Prepared Login page in which making tempelate of email, password and submit
+# making email and password on firebase application
+# firebase id paste in the  secret.js file
+# npm i firebase
+# making firebase.js and import secret.js and firebase as well
+******* Firebase email- rkv@gmail.com and pass- 1234567890
+# create sign up page
+# set firebase rule in which date till valid
+# then put sign up page data in the firebase store link- photo, no. of posts, email
+#
