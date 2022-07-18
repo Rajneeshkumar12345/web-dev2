@@ -38,7 +38,7 @@ function Login() {
     await signOut(auth);
     setUser(null);
   }
-  useEffect(() => {  // This is check that the user login toh nhi ha pahle se
+  useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         // User is signed in, see docs for a list of available properties
@@ -56,9 +56,9 @@ function Login() {
   return (
     <>
       {
-       error !== "" ? <h1>Error is {error}</h1> :
-          loader === true ? <h1>...Loading</h1> :
-            user !== null ?
+       error != "" ? <h1>Error is {error}</h1> :
+          loader == true ? <h1>...Loading</h1> :
+            user != null ?
               <>
                 <button
                   onClick={signout}
